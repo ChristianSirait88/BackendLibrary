@@ -1,0 +1,59 @@
+# CRUD BOOKS
+GET http://localhost:8080/books
+
+###
+GET http://localhost:8080/books/1
+
+###
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+    "title": "Sejarah Indonesia",
+    "author": "Saya",
+    "page": "20"
+}
+
+###
+PATCH http://localhost:8080/books/3
+Content-Type: application/json
+
+{
+    "title": "Sejarah Indonesia Vol.2",
+    "author": "Guru saya",
+    "page": "100"
+}
+
+###
+DELETE http://localhost:8080/books/3
+
+# CRUD MEMBERS
+
+###
+GET http://localhost:8080/members
+
+###
+GET http://localhost:8080/members/1
+
+###
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+    "name": "Agus",
+    "phone_number": "089767897867",
+    "gender": "male"
+}
+
+###
+PATCH http://localhost:8080/members/2
+Content-Type: application/json
+
+{
+    "name": "Adeknya Agus",
+    "phone_number": "082345672432",
+    "gender": "male"
+}
+
+###
+DELETE http://localhost:8080/members/2
